@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rambla", sans-serif;
+    /* font-family: "Playfair Display SC", serif; */
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+}
+
+.navbar .logo img {
+    width: 250px;
+}
+
+.navrightpart {
+    width: 70%;
+    padding: 0;
+    margin: auto;
+}
+
+.navrightpart ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navrightpart ul li {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navrightpart li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navrightpart li a:hover {
+    font-size: 20px;
+    color: #e52e71;
+}
+
+.navrightpart li a:active {
+    text-decoration: underline;
+    font-size: 20px;
+    color: #e52e71;
+}
+
+.navrightpart .dropdown .dropbtn {
+    background: none;
+    border: none;
+    font-family: "Rambla", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+/* .navrightpart .dropdown .dropdown-content{
+    display: hidden;
+} */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 29px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    font-size: 20px;
+    background-color: #e52e71;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: #e52e71;
+}
+
+/* section-1 */
+.section1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.section1 img {
+    width: 100%;
+    /* height: 32rem; */
+}
+
+.section1 .text1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: #fff;
+
+    animation: topslide 3s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s 12;
+    /* -webkit-font-smoothing: antialiased; */
+    line-height: 3.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.section1 h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.section1 h5 {
+    font-size: 2rem;
+    font-family: 'Playfair Display SC', serif;
+}
+
+@keyframes topslide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* section-2 */
+.section2 {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.row1 {
+    margin-left: 4rem;
+    line-height: 3rem;
+}
+
+.row1 h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    color: #e52e71;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.row1 span {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.row1 hr {
+    width: 70px;
+    border-top: 1px solid #e52e71;
+    margin: 0 0 20px 0;
+    /* color: #e52e71; */
+}
+
+.section2 .row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 .row2 .textside {
+    width: 50%;
+}
+
+.section2 .row2 h6 {
+    color: #e52e71;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.section2 .row2 p {
+    color: #666;
+    line-height: 1.75em;
+    margin-bottom: 20px
+}
+
+.row2 .picside {
+    background-image: url(dots.png);
+    width: 31%;
+}
+
+.picside img {
+    width: 360px;
+}
+
+/* sec-3 */
+.section3 {
+    background: #fdf7fa;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.row1 {
+    margin-left: 4rem;
+    line-height: 3rem;
+}
+
+.row1 h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    color: #e52e71;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.row1 span {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.row1 hr {
+    width: 70px;
+    border-top: 1px solid #e52e71;
+    margin: 0 0 20px 0;
+}
+
+.section2 .row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1.5rem;
+}
+
+.row2 .teamcard {
+    background-color: #fff;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamcard .teamcardinner{
+    padding: 1rem;
+}
+.teamcardinner .pic{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.pic img{
+    width: auto;
+    height: auto;
+}
+.teamcont h6 {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    display: inline-block;
+    color: #e52e71;
+}
+
+.teamcont span {
+    color: #666;
+    font-size: 13px;
+}
+
+.teamcont p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.teamcont .icons a {
+    text-align: center;
+    /* width: 32px;
+    height: 32px; */
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid #e52e71;
+    margin-right: 10px;
+    font-size: 13px;
+    padding: 7px 10px;
+}
+
+.teamcont .icons a:hover {
+    background-color: #e52e71;
+    border-color: #e52e71;
+
+}
+
+.teamcont .icons i {
+    color: #e52e71;
+}
+
+.teamcont .icons i:hover {
+    color: #fff;
+}
