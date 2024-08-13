@@ -13,7 +13,7 @@
 }
 
 .navbar .logo img {
-    width: 250px;
+   width:clamp(8rem, 14vw, 14rem);
 }
 
 .navrightpart {
@@ -306,7 +306,7 @@
 .parallax {
 
     background-image: url("parallax.jpg");
-    height: 85vh;
+    /* height: auto; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -583,7 +583,7 @@ height: 254px; */
     color: #e52e71;
 }
 
-/* section-6 */
+                               /* section-6 */
 .section6 {
     width: 100%;
     padding: 5rem 0;
@@ -649,6 +649,9 @@ footer .footrow1 {
     margin-bottom: 20px;
     font-family: 'Playfair Display SC', serif;
     font-size: 18px;
+}
+.logo img {
+    width: clamp(10rem,16vw,16rem);
 }
 
 .cardf1 hr {
@@ -909,11 +912,8 @@ footer .footrow2 {
         width: 90%;
     }
 
-    /* sec3 parallax */
-    .parallax {
-        height: 112vh;
-    }
-
+                                 /* sec3 parallax */
+   
     .parallax-container {
         gap: 2rem;
         justify-content: center;
@@ -1009,7 +1009,7 @@ footer .footrow2 {
     }
 
     footer .footrow1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
 
@@ -1018,7 +1018,6 @@ footer .footrow2 {
 
 @media screen and (max-width:550px) {
     .carousel .carouseltext {
-
         top: 25%;
     }
 
@@ -1126,7 +1125,7 @@ footer .footrow2 {
 
     .book {
         border-radius: 6px;
-        height: 18vh;
+        /* height: 18vh; */
         text-align: center;
     }
 
@@ -1149,7 +1148,7 @@ footer .footrow2 {
     }
 
     footer .footrow1 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer .footrow2 {
@@ -1203,5 +1202,8 @@ footer .footrow2 {
 
     .row2 .slider {
         overflow-x: hidden;
+    }
+    footer .footrow1 {
+        grid-template-columns: 1fr;
     }
 }
