@@ -7,9 +7,11 @@
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: white;
     width: 100%;
     display: flex;
+    position: fixed;
+    z-index: 50;
 }
 
 .navbar .logo img {
@@ -17,7 +19,7 @@
 }
 
 .navrightpart {
-    width: 70%;
+    width: 50%;
     padding: 0;
     margin: auto;
 }
@@ -76,7 +78,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 47px;
+    margin-top: 30px;
 }
 
 /* Links inside the dropdown */
@@ -191,7 +193,7 @@
 }
 
 .carouseltext h1 {
-    width: 70%;
+    width: 84%;
     font-weight: 400;
     font-size: clamp(22px, 5vw, 6rem);
     line-height: 1.2em;
@@ -646,7 +648,7 @@ footer .footrow1 {
 }
 
 .footrow1 h6 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-family: 'Playfair Display SC', serif;
     font-size: 18px;
 }
@@ -657,7 +659,7 @@ footer .footrow1 {
 .cardf1 hr {
     width: 70px;
     border-top: 1px solid #ce9bad;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
 }
 
 .cardf1 {
@@ -732,8 +734,9 @@ footer .footrow2 {
 
 @media screen and (max-width:992px) {
     .carousel .carouseltext {
-        left: 25%;
+        left: 16%;
         width: 90%;
+        top: 45%;
     }
 
     .carouseltext .btn {
@@ -875,7 +878,8 @@ footer .footrow2 {
 
     /* sec1 */
     .carousel .carouseltext {
-        top: 30%;
+        top: 35%;
+        left: 16%;
     }
 
     .carouseltext .btn {
@@ -1018,7 +1022,8 @@ footer .footrow2 {
 
 @media screen and (max-width:550px) {
     .carousel .carouseltext {
-        top: 25%;
+        top: 35%;
+        left: 10%;
     }
 
     .carouseltext .btn {
@@ -1162,7 +1167,10 @@ footer .footrow2 {
 }
 
 @media screen and (max-width:400px) {
-
+    .carousel .carouseltext {
+        left: 10%;
+        top: 32%;
+    }
     .section4 .row2,
     .section5 .row2 {
         grid-template-columns: 1fr;
